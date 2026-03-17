@@ -1,222 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>China Gulf Forum</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet"/>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="China-Gulf Forum (CGF) — the first student-led platform in the GCC dedicated to fostering business, cultural, and academic exchanges between China and the Gulf." />
+    <meta name="author" content="China-Gulf Forum" />
+    <title>China-Gulf Forum 2026</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CGF 2026 Theme -->
+    <link href="css/cgf2026.css" rel="stylesheet" />
+</head>
+<body>
 
-        <style>
-            /* Style the FAQ section */
-            .faq-question {
-                font-weight: bold;
-                cursor: pointer;
-                padding: 10px;
-                border: 1px solid #ccc;
-                margin-bottom: 5px;
-            }
-    
-            .faq-answer {
-                display: none;  /* Initially hide all answers */
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-top: none; /* To avoid double border */
-                margin-bottom: 5px;
-            }
-
-            /* Sticky header CSS */
-            .navbar {
-                position: -webkit-sticky; /* For Safari */
-                position: sticky;
-                top: 0;
-                z-index: 1000;
-                background-color: rgb(145, 47, 47); /* Ensure the background matches your design */
-            }
-            .mySlides {
-                position: absolute;  /* Stack slides on top of each other */
-                width: 100%;
-                height: auto;
-                opacity: 0;  /* Start hidden */
-                transition: opacity 1s ease-in-out;  /* Smooth fade effect */
-            }
-
-            .mySlides.active {
-                opacity: 1;  /* Fully visible */
-            }
-        </style>
-    </head>
-
-    <body>
-        <nav class="navbar navbar-light static-top">
-            <div class="container d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="index.html"><img src="CGF2025logo.png" style="height: 3em; width: auto;"></a>
-                <!-- links -->
-                <div class="d-flex">
-                    <a class="btn btn-primary text-white" href="panel.html">Panels</a>
-                    <a class="btn btn-primary text-white" href="partners.html">Team Member</a>
-                    <a class="btn btn-primary text-white" href="about.html">Previous Events</a>
-                    <a class="btn btn-primary text-white" href="https://nyuad.nyu.edu/en/events/2024/april/china-gulf-forum-2024.html">Register</a>
-                    <a class="btn btn-primary text-white" href="contact.html">Contact</a>
-                </div>
-            </div>
-        </nav>
-        <br>
-
-        <!-- <div class="slideshow-container"> -->
-            <!-- <div class="mySlides">
-                <div class="numbertext">1 / 5</div>
-                <img src="img1.jpg" style="width:100%">
-            </div>
-            
-            <div class="mySlides">
-                <div class="numbertext">2 / 5</div>
-                <img src="img2.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">3 / 5</div>
-                <img src="img3.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">4 / 5</div>
-                <img src="img4.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">5 / 5</div>
-                <img src="img5.jpg" style="width:100%">
-            </div> -->
-
-            <!-- next and previous button  -->
-            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-
-        <!-- </div> -->
-
-        <div class="carousel"> 
-            <div class="carousel-slide">
-                <img src="img1.jpg" alt="Image 1" />
-                <img src="img2.jpg" alt="Image 2" />
-                <img src="img3.jpg" alt="Image 3" />
-                <img src="img4.jpg" alt="Image 4" />
-                <img src="img5.jpg" alt="Image 5" />
+    <!-- Navigation -->
+    <nav class="cgf-navbar navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="cgf2026-logo.svg" alt="China-Gulf Forum 2026" style="height: 2.8em; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cgfNav" aria-controls="cgfNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="cgfNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="panel.html">Panels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://nyuad.nyu.edu/en/events/2024/april/china-gulf-forum-2024.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
+    <!-- Hero Carousel -->
+    <div class="cgf-hero">
+        <div class="carousel-slide">
+            <img src="img1.jpg" alt="CGF Event 1" />
+            <img src="img2.jpg" alt="CGF Event 2" />
+            <img src="img3.jpg" alt="CGF Event 3" />
+            <img src="img4.jpg" alt="CGF Event 4" />
+            <img src="img5.jpg" alt="CGF Event 5" />
         </div>
-        
-        <!-- <div class="container position-relative" style="background-color: rgb(145, 47, 47);">
-            <header class="masthead">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-6">
-                            <div class="text-center text-white">
+    </div>
 
-                                <img src="cgfmain.png" style="height: 12em; width: 12em;">
-                                <h2 class="mb-2" style="color: #ffffff; font-size: 5em;">China - Gulf Forum</h2>
-                                <br><br>
-                                
-                                <a href="https://nyuad.nyu.edu/en/events/2024/april/china-gulf-forum-2024.html" class="btn btn-primary" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); z-index: 2000; position: relative;">Register</a>
-                            </div>  
+    <!-- Section 1: A Legacy of Dialogue -->
+    <section class="section-spacing">
+        <div class="cgf-showcase">
+            <div class="showcase-block">
+                <div class="row g-0">
+                    <div class="col-lg-6 showcase-img" style="background-image: url('cgf0.jpg')"></div>
+                    <div class="col-lg-6 showcase-text">
+                        <h2>A Legacy of Dialogue</h2>
+                        <hr class="gold-divider gold-divider-left">
+                        <p class="lead">Established in 2019, China-Gulf Forum (CGF) is the first forum in the GCC dedicated to fostering business, cultural, and academic exchanges between China and the Gulf region. CGF started as and remains a pure student-led initiative.</p>
+
+                        <div class="timeline-item">
+                            <p class="mb-1"><span class="timeline-year">2019 (CGF 1.0):</span> Founded the inaugural version in Abu Dhabi.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="mb-1"><span class="timeline-year">2021–2024:</span> Increased exposure and impact with a Beijing debut at Peking University's Guanghua School of Management.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="mb-1"><span class="timeline-year">2025 (CGF 5.0):</span> A milestone year with 500+ attendees, expanded institutional partnerships and networks, and received coverage from China Central Television (CCTV) with &gt;300K views.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="mb-0"><span class="timeline-year">Evolution:</span> From a university event to a global initiative, connecting policymakers, industry leaders, researchers around the world.</p>
                         </div>
                     </div>
-            </header>
+                </div>
+            </div>
         </div>
-        <br>  -->
+    </section>
 
-        <section class="showcase">
-            <div class="row g-0" style="background-color:rgba(237, 230, 214, 0.5)">
-                <div class="col-lg-6 text-white showcase-img" style="background-image: url('cgf0.jpg')"></div>
-                <div class="col-lg-6 my-auto showcase-text">
-                    <h2 style="color: rgb(145, 47, 47);">About China-Gulf Forum</h2>
-                    <p class="lead mb-0">Established in 2019, the China-Gulf Forum (CGF) is a pioneering and the inaugural student-led platform dedicated to fostering business,
-                        cultural, and academic exchanges between China and the Gulf region. What started at NYUAD has since grown into a global initiative with a
-                        significant impact.
-                    </p>
+    <!-- Section 2: CGF 2026 -->
+    <section class="section-spacing" style="padding-top: 0;">
+        <div class="cgf-showcase">
+            <div class="showcase-block">
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 showcase-img" style="background-image: url('cgf2.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 showcase-text">
+                        <h2>CGF 2026</h2>
+                        <hr class="gold-divider gold-divider-left">
+                        <p class="lead">Within a global context, CGF 6.0 focuses on addressing the most critical and forward-looking areas of collaboration between China and the Gulf, tackling the most recent issues and opportunities.</p>
+                        <p class="lead">Anchored in leading educational institutions, CGF 6.0 aims to promote meaningful exchanges and collaboration among the next generation of leaders, scholars, and practitioners from China and the Gulf, strengthening ties and shaping a shared future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Impact by Numbers -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title">Impact by Numbers</h2>
+                <hr class="gold-divider">
+            </div>
+
+            <!-- Signup Growth Chart -->
+            <div class="text-center mb-2">
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500;">Signup Growth</p>
+            </div>
+            <div class="growth-chart">
+                <div class="growth-bar count-up">
+                    <span class="bar-value">134</span>
+                    <div class="bar" data-height="44px" style="height: 0;"></div>
+                    <span class="bar-year">2021</span>
+                </div>
+                <div class="growth-bar count-up">
+                    <span class="bar-value">322</span>
+                    <div class="bar" data-height="107px" style="height: 0;"></div>
+                    <span class="bar-year">2022</span>
+                </div>
+                <div class="growth-bar count-up">
+                    <span class="bar-value">387</span>
+                    <div class="bar" data-height="129px" style="height: 0;"></div>
+                    <span class="bar-year">2023</span>
+                </div>
+                <div class="growth-bar count-up">
+                    <span class="bar-value">328</span>
+                    <div class="bar" data-height="109px" style="height: 0;"></div>
+                    <span class="bar-year">2024</span>
+                </div>
+                <div class="growth-bar count-up">
+                    <span class="bar-value">550</span>
+                    <div class="bar" data-height="165px" style="height: 0;"></div>
+                    <span class="bar-year">2025</span>
+                </div>
+                <div class="growth-bar count-up">
+                    <span class="bar-value">600</span>
+                    <div class="bar" data-height="180px" style="height: 0;"></div>
+                    <span class="bar-year">2026(E)</span>
                 </div>
             </div>
 
-            <br>
-            <br>
-
-            <div class="container-fluid p-0" id="aboutus" style="background-color:rgba(237, 230, 214, 0.5)">
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('cgf2.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2 style="color: rgb(145, 47, 47);">CGF 2025</h2>
-                        <p class="lead mb-0"> Within a global context, CGF 5.0 focuses on addressing the most critical and
-                            forward-looking areas of collaboration between China and the Gulf, tackling the
-                            most recent issues and opportunities.</p>
-                            <br>
-                        <p class="lead mb-0"> Anchored in leading educational institutions, CGF 5.0 aims to promote
-                            meaningful exchanges and collaboration among the next generation of leaders,
-                            scholars, and practitioners from China and the Gulf, strengthening ties and
-                            shaping a shared future.</p>
+            <!-- Key Stats -->
+            <div class="row mt-4">
+                <div class="col-6 col-md-3">
+                    <div class="impact-stat count-up">
+                        <div class="stat-number" data-target="1100" data-suffix="+">0</div>
+                        <div class="stat-label">Attendees<br><small style="font-size:0.72rem;opacity:0.7">(2020–2025)</small></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="impact-stat count-up">
+                        <div class="stat-number" data-target="76" data-suffix="+">0</div>
+                        <div class="stat-label">Speakers<br><small style="font-size:0.72rem;opacity:0.7">incl. Ministers &amp; CEOs</small></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="impact-stat count-up">
+                        <div class="stat-number" data-target="15" data-suffix="+">0</div>
+                        <div class="stat-label">Countries &amp; Regions<br><small style="font-size:0.72rem;opacity:0.7">Represented</small></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="impact-stat count-up">
+                        <div class="stat-number" data-target="5" data-suffix="+">0</div>
+                        <div class="stat-label">Features by<br><small style="font-size:0.72rem;opacity:0.7">Mainstream Media</small></div>
                     </div>
                 </div>
             </div>
 
-            <br>
-            <br>
-
-            <div class="row g-0" style="background-color:rgba(237, 230, 214, 0.5)">
-                <div class="col-lg-6 text-white showcase-img" style="background-image: url('cgf3.jpg')"></div>
-                <div class="col-lg-6 my-auto showcase-text">
-                    <h2 style="color: rgb(145, 47, 47);">Two Forums, One CGF </h2>
-                    <p class="lead mb-0">CGF Abu Dhabi - 19 April 2025 </p>
-                    <ul style="margin-left:2em">
-                        <li class="lead mb-0">Panel 1: Arts & Culture </li>
-                        <li class="lead mb-0">Panel 2: International Trade &
-                            Relations </li>
-                        <li class="lead mb-0">Panel 3: Technology &
-                            Innovation</li>
-                        <li class="lead mb-0">Panel 4: Business, Economic, and Finance </li>
-                    </ul>
-
-                    <p class="lead mb-0">CGF Beijing - 20 April 2025 </p>
-                    <ul style="margin-left:2em">
-                        <li class="lead mb-0">Panel 1: International Trade & Relations </li>
-                        <li class="lead mb-0">Panel 2: Business, Economic, and Finance </li>
-                    </ul>
-                </div>
+            <!-- Media Logos -->
+            <div class="text-center mt-4 mb-2">
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Featured In</p>
             </div>
+            <div class="media-logos">
+                <span>Emirates News Agency WAM</span>
+                <span>CCTV</span>
+                <span>Al Jazeera</span>
+            </div>
+        </div>
+    </section>
 
-            
-        </section>
+    <!-- Footer -->
+    <footer class="cgf-footer">
+        <div class="footer-inner">
+            <a href="index.html" class="footer-brand">
+                <img src="cgf2026-logo.svg" alt="CGF 2026">
+            </a>
+            <div class="footer-social">
+                <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzk0NDE5NTkwMQ==&scene=124#wechat_redirect" target="_blank" title="WeChat"><img src="wechat.svg" alt="WeChat"></a>
+                <a href="https://www.instagram.com/china_gulf_forum/" target="_blank" title="Instagram"><img src="instagram.svg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/company/china-gulf-forum/posts/?feedView=all" target="_blank" title="LinkedIn"><img src="linkedin.svg" alt="LinkedIn"></a>
+                <a href="mailto:china-gulf-forum-nyuad@nyu.edu" title="Email"><img src="mail.png" alt="Email"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 China-Gulf Forum. A student-led initiative fostering China-Gulf dialogue since 2019.</p>
+        </div>
+    </footer>
 
-        <br>
-
-        <!-- Footer-->
-        <footer>
-            <img src="CGF2025logo.png" style="height: 3em; width: auto;">
-            <section>
-                <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzk0NDE5NTkwMQ==&scene=124#wechat_redirect" target="_blank" title="LinkedIn"><img src="wechat.svg" alt="wechat Icon" style="height:24px; width:24px"></a>
-                <a href="https://www.instagram.com/china_gulf_forum/" target="_blank" title="LinkedIn"><img src="instagram.svg" alt="instagram Icon" style="height:24px; width:24px"></a>
-                <a href="https://www.linkedin.com/company/china-gulf-forum/posts/?feedView=all" target="_blank" title="LinkedIn"><img src="linkedin.svg" alt="LinkedIn Icon"></a>
-                <a href="mailto:china-gulf-forum-nyuad@nyu.edu" title="Send Email"><img src="mail.png" alt="Email Icon"></a>
-            </section>
-        </footer>
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-
-    </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CGF Scripts -->
+    <script src="js/scripts.js"></script>
+</body>
 </html>
