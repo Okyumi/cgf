@@ -19,6 +19,9 @@
 </head>
 <body>
 
+    <!-- Gold accent line -->
+    <div class="gold-accent-line"></div>
+
     <!-- Navigation -->
     <nav class="cgf-navbar navbar navbar-expand-lg">
         <div class="container">
@@ -41,38 +44,49 @@
         </div>
     </nav>
 
-    <!-- Hero Carousel -->
-    <div class="cgf-hero">
-        <div class="carousel-slide">
-            <img src="media/photos/hero/img1.jpg" alt="CGF Event 1" />
-            <img src="media/photos/hero/img2.jpg" alt="CGF Event 2" />
-            <img src="media/photos/hero/img3.jpg" alt="CGF Event 3" />
-            <img src="media/photos/hero/img4.jpg" alt="CGF Event 4" />
-            <img src="media/photos/hero/img5.jpg" alt="CGF Event 5" />
+    <!-- Hero — Full-screen Crossfade -->
+    <section class="cgf-hero" id="hero">
+        <div class="hero-images">
+            <img src="media/photos/hero/img1.jpg" alt="CGF Event 1" class="hero-img active" />
+            <img src="media/photos/hero/img2.jpg" alt="CGF Event 2" class="hero-img" loading="lazy" />
+            <img src="media/photos/hero/img3.jpg" alt="CGF Event 3" class="hero-img" loading="lazy" />
+            <img src="media/photos/hero/img4.jpg" alt="CGF Event 4" class="hero-img" loading="lazy" />
+            <img src="media/photos/hero/img5.jpg" alt="CGF Event 5" class="hero-img" loading="lazy" />
         </div>
-    </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-cloud-pattern"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">China – Gulf Forum <span class="hero-year">2026</span></h1>
+            <p class="hero-tagline">Bridging Civilizations, Shaping Futures</p>
+            <a href="#legacy" class="hero-cta">Explore CGF 6.0 &rarr;</a>
+        </div>
+    </section>
 
     <!-- Section 1: A Legacy of Dialogue -->
-    <section class="section-spacing">
+    <section class="section-spacing" id="legacy">
         <div class="cgf-showcase">
-            <div class="showcase-block">
+            <div class="showcase-block" data-animate="fade-up">
                 <div class="row g-0">
                     <div class="col-lg-6 showcase-img" style="background-image: url('media/photos/events/cgf0.jpg')"></div>
-                    <div class="col-lg-6 showcase-text">
+                    <div class="col-lg-6 showcase-text legacy-text-section">
                         <h2>A Legacy of Dialogue</h2>
                         <hr class="gold-divider gold-divider-left">
                         <p class="lead">Established in 2019, China-Gulf Forum (CGF) is the first forum in the GCC dedicated to fostering business, cultural, and academic exchanges between China and the Gulf region. CGF started as and remains a pure student-led initiative.</p>
 
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-animate="fade-up" data-animate-delay="0">
+                            <div class="timeline-dot"></div>
                             <p class="mb-1"><span class="timeline-year">2019 (CGF 1.0):</span> Founded the inaugural version in Abu Dhabi.</p>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-animate="fade-up" data-animate-delay="150">
+                            <div class="timeline-dot"></div>
                             <p class="mb-1"><span class="timeline-year">2021–2024:</span> Increased exposure and impact with a Beijing debut at Peking University's Guanghua School of Management.</p>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-animate="fade-up" data-animate-delay="300">
+                            <div class="timeline-dot"></div>
                             <p class="mb-1"><span class="timeline-year">2025 (CGF 5.0):</span> A milestone year with 500+ attendees, expanded institutional partnerships and networks, and received coverage from China Central Television (CCTV) with &gt;300K views.</p>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-animate="fade-up" data-animate-delay="450">
+                            <div class="timeline-dot"></div>
                             <p class="mb-0"><span class="timeline-year">Evolution:</span> From a university event to a global initiative, connecting policymakers, industry leaders, researchers around the world.</p>
                         </div>
                     </div>
@@ -84,13 +98,14 @@
     <!-- Section 2: CGF 2026 -->
     <section class="section-spacing" style="padding-top: 0;">
         <div class="cgf-showcase">
-            <div class="showcase-block">
+            <div class="showcase-block" data-animate="fade-up">
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 showcase-img" style="background-image: url('media/photos/events/cgf2.jpg')"></div>
+                    <div class="col-lg-6 order-lg-2 showcase-img cgf2026-parallax-img" style="background-image: url('media/photos/events/cgf2.jpg')"></div>
                     <div class="col-lg-6 order-lg-1 showcase-text">
                         <h2>CGF 2026</h2>
                         <hr class="gold-divider gold-divider-left">
                         <p class="lead">Within a global context, CGF 6.0 focuses on addressing the most critical and forward-looking areas of collaboration between China and the Gulf, tackling the most recent issues and opportunities.</p>
+                        <div class="gold-ornament"></div>
                         <p class="lead">Anchored in leading educational institutions, CGF 6.0 aims to promote meaningful exchanges and collaboration among the next generation of leaders, scholars, and practitioners from China and the Gulf, strengthening ties and shaping a shared future.</p>
                     </div>
                 </div>
@@ -99,9 +114,16 @@
     </section>
 
     <!-- Section 3: Impact by Numbers -->
-    <section class="impact-section">
+    <section class="impact-section" id="impact">
+        <div class="impact-particles" aria-hidden="true">
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+        </div>
         <div class="container">
-            <div class="text-center mb-4">
+            <div class="text-center mb-4" data-animate="fade-up">
                 <h2 class="section-title">Impact by Numbers</h2>
                 <hr class="gold-divider">
             </div>
@@ -183,6 +205,13 @@
         </div>
     </section>
 
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="var(--maroon-dark)"/>
+        </svg>
+    </div>
+
     <!-- Footer -->
     <footer class="cgf-footer">
         <div class="footer-inner">
@@ -200,6 +229,11 @@
             <p>&copy; 2026 China-Gulf Forum. A student-led initiative fostering China-Gulf dialogue since 2019.</p>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
