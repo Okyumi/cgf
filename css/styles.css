@@ -12,7 +12,7 @@
  */
  @font-face {
   font-family: 'Bagnard';
-  src: url('../BagnardSans.otf') format('opentype');
+  src: url('../media/fonts/BagnardSans.otf') format('opentype');
 }
 
 .carousel{

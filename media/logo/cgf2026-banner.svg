@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120">
+  <defs>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C4A35A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D4B96A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C4A35A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Maroon banner background -->
+  <rect width="600" height="120" rx="4" ry="4" fill="#912F2F"/>
+
+  <!-- Decorative cloud/scroll motif on the left -->
+  <g transform="translate(12, 14) scale(0.85)" fill="none" stroke="#EDE6D6" stroke-width="1.2" opacity="0.35">
+    <!-- Cloud swirl 1 -->
+    <path d="M10,50 C10,30 30,10 50,15 C60,17 65,28 60,38 C55,48 40,50 35,42 C30,34 40,25 48,30"/>
+    <!-- Cloud swirl 2 -->
+    <path d="M5,70 C5,55 20,45 35,50 C45,53 48,65 40,72 C32,79 20,72 22,62 C24,52 38,52 40,60"/>
+    <!-- Cloud swirl 3 -->
+    <path d="M50,65 C55,50 75,45 82,55 C89,65 78,80 65,75 C52,70 58,55 68,55"/>
+    <!-- Decorative spiral -->
+    <path d="M25,85 C20,80 25,70 35,72 C45,74 42,88 30,88 C22,88 22,82 27,80"/>
+    <!-- Small cloud accent -->
+    <path d="M60,20 C65,12 80,12 82,22 C84,32 70,35 65,28"/>
+    <!-- Flowing line -->
+    <path d="M8,95 C20,90 40,95 55,88 C70,81 85,85 90,78"/>
+  </g>
+
+  <!-- Thin gold vertical separator -->
+  <line x1="100" y1="15" x2="100" y2="105" stroke="url(#goldAccent)" stroke-width="1" opacity="0.5"/>
+
+  <!-- Main title: China – Gulf Forum -->
+  <text x="120" y="48" font-family="'Cormorant Garamond', 'Playfair Display', 'Georgia', serif" font-size="30" font-weight="700" fill="#FFFFFF" letter-spacing="2">China</text>
+  <text x="210" y="48" font-family="'Cormorant Garamond', 'Playfair Display', 'Georgia', serif" font-size="30" font-weight="400" fill="url(#goldAccent)" letter-spacing="1"> – </text>
+  <text x="245" y="48" font-family="'Cormorant Garamond', 'Playfair Display', 'Georgia', serif" font-size="30" font-weight="700" fill="#FFFFFF" letter-spacing="2">Gulf Forum</text>
+
+  <!-- Year 2026 -->
+  <text x="470" y="48" font-family="'Cormorant Garamond', 'Playfair Display', 'Georgia', serif" font-size="30" font-weight="700" fill="url(#goldAccent)" letter-spacing="2">2026</text>
+
+  <!-- Thin gold horizontal line -->
+  <line x1="120" y1="58" x2="555" y2="58" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Chinese text -->
+  <text x="120" y="80" font-family="'Noto Serif SC', 'SimSun', serif" font-size="16" fill="#EDE6D6" opacity="0.9">中国 海湾 论坛</text>
+
+  <!-- Arabic text -->
+  <text x="555" y="80" font-family="'Noto Naskh Arabic', 'Arial', sans-serif" font-size="16" fill="#EDE6D6" opacity="0.9" text-anchor="end" direction="rtl">المنتدى الخليجي الصيني</text>
+
+  <!-- Subtle decorative dots/line at bottom -->
+  <line x1="120" y1="95" x2="555" y2="95" stroke="#EDE6D6" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="337" cy="95" r="2" fill="url(#goldAccent)" opacity="0.4"/>
+  <circle cx="325" cy="95" r="1" fill="url(#goldAccent)" opacity="0.3"/>
+  <circle cx="349" cy="95" r="1" fill="url(#goldAccent)" opacity="0.3"/>
+
+  <!-- Decorative cloud motif on the right (mirrored, subtle) -->
+  <g transform="translate(555, 14) scale(-0.5, 0.5)" fill="none" stroke="#EDE6D6" stroke-width="1.2" opacity="0.2">
+    <path d="M10,50 C10,30 30,10 50,15 C60,17 65,28 60,38 C55,48 40,50 35,42 C30,34 40,25 48,30"/>
+    <path d="M5,70 C5,55 20,45 35,50 C45,53 48,65 40,72 C32,79 20,72 22,62"/>
+    <path d="M50,65 C55,50 75,45 82,55 C89,65 78,80 65,75"/>
+  </g>
+</svg>
