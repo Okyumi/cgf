@@ -16,105 +16,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CGF 2026 Theme -->
     <link href="css/cgf2026.css" rel="stylesheet" />
-
-    <style>
-        .team-section {
-            margin-bottom: 3rem;
-        }
-        .team-title {
-            font-family: 'Inter', sans-serif;
-            background: var(--maroon);
-            color: white;
-            padding: 0.6rem 1.5rem;
-            border-radius: var(--radius-sm);
-            font-size: 1.1rem;
-            font-weight: 600;
-            letter-spacing: 0.03em;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 8px rgba(145, 47, 47, 0.2);
-        }
-        .team-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.5rem;
-        }
-        .team-member {
-            width: 250px;
-            height: 300px;
-            perspective: 1000px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            position: relative;
-            z-index: 1;
-        }
-        .team-member:hover {
-            transform: scale(1.08);
-            z-index: 3;
-        }
-        .flip-card-inner {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: transform 0.6s;
-        }
-        .team-member.flipped .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-        .flip-card-front, .flip-card-back {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            backface-visibility: hidden;
-            padding: 1.5rem;
-            border-radius: var(--radius-md);
-            text-align: center;
-            overflow-y: auto;
-        }
-        .flip-card-front {
-            background: var(--white);
-            border: 1px solid var(--cream-dark);
-            box-shadow: var(--shadow-sm);
-        }
-        .flip-card-front h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.25rem;
-            color: var(--maroon);
-            margin: 0.5rem 0;
-        }
-        .flip-card-front p {
-            font-size: 0.82rem;
-            line-height: 1.5;
-            color: var(--text-body);
-            text-align: left;
-        }
-        .flip-card-back {
-            background: var(--maroon);
-            color: white;
-            transform: rotateY(180deg);
-        }
-        .flip-card-back p {
-            font-size: 0.8rem;
-            line-height: 1.5;
-            color: white;
-            text-align: left;
-        }
-        @media (max-width: 768px) {
-            .team-member {
-                width: 90%;
-                max-width: 300px;
-            }
-        }
-    </style>
-    <script>
-        function flipCard(element) {
-            element.classList.toggle("flipped");
-        }
-    </script>
 </head>
 <body>
+
+    <!-- Gold accent line -->
+    <div class="gold-accent-line"></div>
 
     <!-- Navigation -->
     <nav class="cgf-navbar navbar navbar-expand-lg">
@@ -143,386 +49,342 @@
         <div class="container">
             <h1>Meet Our Team</h1>
             <hr class="gold-divider">
+            <p class="team-header-tagline">The dedicated students behind China-Gulf Forum 2026</p>
         </div>
     </div>
 
-    <div class="container" style="max-width: 1100px; padding: 2.5rem 1.5rem;">
+    <div class="team-container">
 
         <!-- Chairs Section -->
-        <div class="team-section">
-            <h2 class="team-title">Chairs</h2>
+        <div class="team-section" data-animate="fade-up">
+            <h2 class="team-dept-title">Chairs</h2>
             <div class="team-grid">
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Siqiao Liang</h3>
-                            <p><strong>Where do you call home?</strong> Beijing</p>
-                            <p><strong>Bio:</strong> Siqiao studies Social Research and Public Policy and Arabic at NYU Abu Dhabi. He is the Vice President of the Abu Dhabi Chapter of Chinese Students and Scholars Association.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> CGF has the potential to make a greater contribution to Chinese and Gulf societies, as well as to our community in Abu Dhabi.</p>
-                            <p><strong>What I Hope to Achieve:</strong> Encourage greater participation from students, scholars, practitioners, and the public in China-UAE and China-Gulf interactions and exchanges.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Siqiao Liang</h3>
+                        <p class="team-card-home">Beijing</p>
+                        <p class="team-card-bio">Siqiao studies Social Research and Public Policy and Arabic at NYU Abu Dhabi. He is the Vice President of the Abu Dhabi Chapter of Chinese Students and Scholars Association.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> CGF has the potential to make a greater contribution to Chinese and Gulf societies, as well as to our community in Abu Dhabi.</p>
+                        <p><strong>What I Hope to Achieve:</strong> Encourage greater participation from students, scholars, practitioners, and the public in China-UAE and China-Gulf interactions and exchanges.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Evan Wang</h3>
-                            <p><strong>Where do you call home?</strong> China</p>
-                            <p><strong>Bio:</strong> Evan is a senior majoring in Economics at NYU Abu Dhabi, specializing in Finance. He possesses strong interests in the field of Leveraged Finance and would practice Investment Banking in Hong Kong upon graduation.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> Vision to reduce bias in bilateral communication.</p>
-                            <p><strong>What I Hope to Achieve:</strong> Build sustainable growth of CGF and strengthen collaboration between Abu Dhabi and Beijing Team.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Evan Wang</h3>
+                        <p class="team-card-home">China</p>
+                        <p class="team-card-bio">Evan is a senior majoring in Economics at NYU Abu Dhabi, specializing in Finance. He possesses strong interests in the field of Leveraged Finance and would practice Investment Banking in Hong Kong upon graduation.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> Vision to reduce bias in bilateral communication.</p>
+                        <p><strong>What I Hope to Achieve:</strong> Build sustainable growth of CGF and strengthen collaboration between Abu Dhabi and Beijing Team.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>H.H. Zayed Al Nahyan</h3>
-                            <p><strong>Where do you call home?</strong> UAE</p>
-                        </div>
-                        <div class="flip-card-back"></div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">H.H. Zayed Al Nahyan</h3>
+                        <p class="team-card-home">UAE</p>
                     </div>
+                    <div class="team-card-overlay"></div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Abdulmalek AlHakem</h3>
-                            <p><strong>Where do you call home?</strong> UAE</p>
-                        </div>
-                        <div class="flip-card-back"></div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Abdulmalek AlHakem</h3>
+                        <p class="team-card-home">UAE</p>
                     </div>
+                    <div class="team-card-overlay"></div>
                 </div>
             </div>
         </div>
 
         <!-- AD Arts & Culture -->
-        <div class="team-section">
-            <h2 class="team-title">AD Arts &amp; Culture</h2>
+        <div class="team-section" data-animate="fade-up">
+            <h2 class="team-dept-title">AD Arts &amp; Culture</h2>
             <div class="team-grid">
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Berenice Lara</h3>
-                            <p><strong>Where do you call home?</strong> Mexico</p>
-                            <p><strong>Bio:</strong> Berenice was born and raised in Chiapas, Mexico. She is currently a sophomore majoring in Political Sciences and minoring in both Chinese and Arabic at NYUAD.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> Berenice has always wanted to join CGF since she attended in her freshman year. She finds the talks extremely informative about the UAE and its relationships with China.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She hopes CGF sparks interest in the China-Gulf relationships and their role in future geopolitics.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Berenice Lara</h3>
+                        <p class="team-card-home">Mexico</p>
+                        <p class="team-card-bio">Berenice was born and raised in Chiapas, Mexico. She is currently a sophomore majoring in Political Sciences and minoring in both Chinese and Arabic at NYUAD.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> Berenice has always wanted to join CGF since she attended in her freshman year. She finds the talks extremely informative about the UAE and its relationships with China.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She hopes CGF sparks interest in the China-Gulf relationships and their role in future geopolitics.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Clement Shen</h3>
-                            <p><strong>Where do you call home?</strong> Shanghai</p>
-                            <p><strong>Bio:</strong> Clement is a senior at NYU Abu Dhabi, majoring in psychology and theater. He is also a director and stage manager based in Abu Dhabi and Shanghai.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> To support my friends.</p>
-                            <p><strong>What I Hope to Achieve:</strong> He hopes to promote the development of performing arts in the region and back home.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Clement Shen</h3>
+                        <p class="team-card-home">Shanghai</p>
+                        <p class="team-card-bio">Clement is a senior at NYU Abu Dhabi, majoring in psychology and theater. He is also a director and stage manager based in Abu Dhabi and Shanghai.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> To support my friends.</p>
+                        <p><strong>What I Hope to Achieve:</strong> He hopes to promote the development of performing arts in the region and back home.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Emilie Oda</h3>
-                            <p><strong>Where do you call home?</strong> Tokyo</p>
-                            <p><strong>Bio:</strong> Emilie is a freshman intending to major in Math. She is from Japan but is learning Chinese and happy to be part of the Arts &amp; Culture team!</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> Emilie joined CGF to integrate herself in Chinese culture and hopes her experience in performance arts can benefit the forum.</p>
-                            <p><strong>What I Hope to Achieve:</strong> A better understanding of both worlds — China and the Gulf — from the performance arts perspective.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Emilie Oda</h3>
+                        <p class="team-card-home">Tokyo</p>
+                        <p class="team-card-bio">Emilie is a freshman intending to major in Math. She is from Japan but is learning Chinese and happy to be part of the Arts &amp; Culture team!</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> Emilie joined CGF to integrate herself in Chinese culture and hopes her experience in performance arts can benefit the forum.</p>
+                        <p><strong>What I Hope to Achieve:</strong> A better understanding of both worlds — China and the Gulf — from the performance arts perspective.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Yutong Tang</h3>
-                            <p><strong>Where do you call home?</strong> Hefei</p>
-                            <p><strong>Bio:</strong> Yutong is a freshman student from China. She really likes cooking and reading all kinds of books!</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> Growing up in China and studying in the UAE, Yutong is interested in how the relationship between the two places she calls home develops over time.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She wants to meet more people and bridge people together.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Yutong Tang</h3>
+                        <p class="team-card-home">Hefei</p>
+                        <p class="team-card-bio">Yutong is a freshman student from China. She really likes cooking and reading all kinds of books!</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> Growing up in China and studying in the UAE, Yutong is interested in how the relationship between the two places she calls home develops over time.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She wants to meet more people and bridge people together.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- AD Business, Economics, and Finance -->
-        <div class="team-section">
-            <h2 class="team-title">AD Business, Economics, and Finance</h2>
+        <div class="team-section" data-animate="fade-up">
+            <h2 class="team-dept-title">AD Business, Economics, and Finance</h2>
             <div class="team-grid">
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Chris Huang</h3>
-                            <p><strong>Bio:</strong> Chris is a senior economics student at NYU Abu Dhabi with a minor in mathematics. He serves as the Head of the Business, Economics, and Finance Panel, wishing to bring dialogues and strengthen collaboration between regional markets.</p>
-                        </div>
-                        <div class="flip-card-back"></div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Chris Huang</h3>
+                        <p class="team-card-bio">Chris is a senior economics student at NYU Abu Dhabi with a minor in mathematics. He serves as the Head of the Business, Economics, and Finance Panel, wishing to bring dialogues and strengthen collaboration between regional markets.</p>
+                    </div>
+                    <div class="team-card-overlay"></div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Nicoleta Geru</h3>
+                        <p class="team-card-home">Republic of Moldova</p>
+                        <p class="team-card-bio">Nicoleta is a freshman majoring in Economics with a strong interest in global affairs and public policy.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> Nicoleta joined CGF because of her deep interest in the economic, political, and cultural dynamics of the Gulf region and its evolving relationship with China.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She hopes to deepen her understanding of the evolving relationship between China and the Gulf.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Nicoleta Geru</h3>
-                            <p><strong>Where do you call home?</strong> Republic of Moldova</p>
-                            <p><strong>Bio:</strong> Nicoleta is a freshman majoring in Economics with a strong interest in global affairs and public policy.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> Nicoleta joined CGF because of her deep interest in the economic, political, and cultural dynamics of the Gulf region and its evolving relationship with China.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She hopes to deepen her understanding of the evolving relationship between China and the Gulf.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Yuhe Wu</h3>
+                        <p class="team-card-home">Shanghai</p>
+                        <p class="team-card-bio">Yuhe is a Junior majoring in economics.</p>
                     </div>
-                </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Yuhe Wu</h3>
-                            <p><strong>Where do you call home?</strong> Shanghai</p>
-                            <p><strong>Bio:</strong> Yuhe is a Junior majoring in economics.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> She wants to contribute to the conversation and learn from engaging.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She hopes to help more people understand the bonds between two regions.</p>
-                        </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> She wants to contribute to the conversation and learn from engaging.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She hopes to help more people understand the bonds between two regions.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- AD International Trade & Relations -->
-        <div class="team-section">
-            <h2 class="team-title">AD International Trade &amp; Relations</h2>
+        <div class="team-section" data-animate="fade-up">
+            <h2 class="team-dept-title">AD International Trade &amp; Relations</h2>
             <div class="team-grid">
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Anna Lipiec</h3>
-                            <p><strong>Where do you call home?</strong> Poland</p>
-                            <p><strong>Bio:</strong> Anna is a sophomore studying Political Science and minoring in Chinese and Peace Studies.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> She wanted to be part of an extraordinary conference bringing together key actors in current global politics.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She hopes to become more skilled in conference organization and networking.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Anna Lipiec</h3>
+                        <p class="team-card-home">Poland</p>
+                        <p class="team-card-bio">Anna is a sophomore studying Political Science and minoring in Chinese and Peace Studies.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> She wanted to be part of an extraordinary conference bringing together key actors in current global politics.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She hopes to become more skilled in conference organization and networking.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Salama Al Ali</h3>
-                            <p><strong>Where do you call home?</strong> UAE</p>
-                            <p><strong>Bio:</strong> Salama is an Emirati freshman planning to major in Engineering.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> She is very interested in the relationship between China and the UAE and is confident these relations will continue to grow.</p>
-                            <p><strong>What I Hope to Achieve:</strong> Salama hopes to build on her knowledge of international trade and polish her leadership skills.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Salama Al Ali</h3>
+                        <p class="team-card-home">UAE</p>
+                        <p class="team-card-bio">Salama is an Emirati freshman planning to major in Engineering.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> She is very interested in the relationship between China and the UAE and is confident these relations will continue to grow.</p>
+                        <p><strong>What I Hope to Achieve:</strong> Salama hopes to build on her knowledge of international trade and polish her leadership skills.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Treedom Zhang</h3>
-                            <p><strong>Where do you call home?</strong> China</p>
-                            <p><strong>Bio:</strong> Treedom is a research assistant at a cognitive neuroscience lab at NYUAD. She enjoys trying out new things and learning new skills.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> Treedom believes CGF is a great platform to collaborate with like-minded students and connect with industry experts.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She hopes to expand her knowledge in international trade and relations between China and the Gulf.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Treedom Zhang</h3>
+                        <p class="team-card-home">China</p>
+                        <p class="team-card-bio">Treedom is a research assistant at a cognitive neuroscience lab at NYUAD. She enjoys trying out new things and learning new skills.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> Treedom believes CGF is a great platform to collaborate with like-minded students and connect with industry experts.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She hopes to expand her knowledge in international trade and relations between China and the Gulf.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Victoria Wang</h3>
-                            <p><strong>Where do you call home?</strong> China</p>
-                            <p><strong>Bio:</strong> Victoria is a junior majoring in SRPP.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> To explore more about Gulf China relations.</p>
-                            <p><strong>What I Hope to Achieve:</strong> Have more network.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Victoria Wang</h3>
+                        <p class="team-card-home">China</p>
+                        <p class="team-card-bio">Victoria is a junior majoring in SRPP.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> To explore more about Gulf China relations.</p>
+                        <p><strong>What I Hope to Achieve:</strong> Have more network.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- AD Marketing -->
-        <div class="team-section">
-            <h2 class="team-title">AD Marketing</h2>
+        <div class="team-section" data-animate="fade-up">
+            <h2 class="team-dept-title">AD Marketing</h2>
             <div class="team-grid">
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Jiale Mi</h3>
-                            <p><strong>Where do you call home?</strong> Suzhou</p>
-                            <p><strong>Bio:</strong> Jiale is a junior majoring in psychology.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> This is his second time joining CGF. He had a great experience last year and it brought him great satisfaction seeing the forum implemented.</p>
-                            <p><strong>What I Hope to Achieve:</strong> Market a great forum for everyone, to make the experience memorable.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Jiale Mi</h3>
+                        <p class="team-card-home">Suzhou</p>
+                        <p class="team-card-bio">Jiale is a junior majoring in psychology.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> This is his second time joining CGF. He had a great experience last year and it brought him great satisfaction seeing the forum implemented.</p>
+                        <p><strong>What I Hope to Achieve:</strong> Market a great forum for everyone, to make the experience memorable.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Elizabeth Li</h3>
-                            <p><strong>Where do you call home?</strong> Abu Dhabi</p>
-                            <p><strong>Bio:</strong> Elizabeth is a final year student double majoring in Economics and Social Research and Public Policy at NYU Abu Dhabi.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> Elizabeth joined CGF to contribute to a platform that bridges cultures, economies, and ideas globally.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She wants to explore perspectives that deepen mutual understanding between regions using innovative marketing strategies.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Elizabeth Li</h3>
+                        <p class="team-card-home">Abu Dhabi</p>
+                        <p class="team-card-bio">Elizabeth is a final year student double majoring in Economics and Social Research and Public Policy at NYU Abu Dhabi.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> Elizabeth joined CGF to contribute to a platform that bridges cultures, economies, and ideas globally.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She wants to explore perspectives that deepen mutual understanding between regions using innovative marketing strategies.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Je-Luen Chang</h3>
-                            <p><strong>Where do you call home?</strong> Taiwan</p>
-                            <p><strong>Bio:</strong> Je-Luen is a senior majoring in Business and minoring in music. If you need someone to play piano for an event, he is your guy.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> Je-Luen joined CGF last semester and had an amazing experience learning about collaborations between China and the Gulf.</p>
-                            <p><strong>What I Hope to Achieve:</strong> He hopes to learn more and put his marketing skills to use.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Je-Luen Chang</h3>
+                        <p class="team-card-home">Taiwan</p>
+                        <p class="team-card-bio">Je-Luen is a senior majoring in Business and minoring in music. If you need someone to play piano for an event, he is your guy.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> Je-Luen joined CGF last semester and had an amazing experience learning about collaborations between China and the Gulf.</p>
+                        <p><strong>What I Hope to Achieve:</strong> He hopes to learn more and put his marketing skills to use.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Stephanie Yin</h3>
-                            <p><strong>Where do you call home?</strong> Suzhou</p>
-                            <p><strong>Bio:</strong> Stephanie is a senior at NYU Abu Dhabi, double majoring in Film and Business. She joined CGF in 2022 and leads marketing as Head of Marketing.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> She wanted to deepen her engagement with the region and achieve more in furthering China-Gulf engagement.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She hopes to gain skills in management and leadership and help people embrace diverse cultures.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Stephanie Yin</h3>
+                        <p class="team-card-home">Suzhou</p>
+                        <p class="team-card-bio">Stephanie is a senior at NYU Abu Dhabi, double majoring in Film and Business. She joined CGF in 2022 and leads marketing as Head of Marketing.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> She wanted to deepen her engagement with the region and achieve more in furthering China-Gulf engagement.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She hopes to gain skills in management and leadership and help people embrace diverse cultures.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- AD Operations -->
-        <div class="team-section">
-            <h2 class="team-title">AD Operations</h2>
+        <div class="team-section" data-animate="fade-up">
+            <h2 class="team-dept-title">AD Operations</h2>
             <div class="team-grid">
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Ali Al Dailati</h3>
-                            <p><strong>Where do you call home?</strong> Lebanon</p>
-                            <p><strong>Bio:</strong> Ali is a freshman majoring in Biology and minoring in Political Science. He is a big aviation enthusiast and an avid political thinker!</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> He joined CGF to engage with emerging Gulf-China partnerships driving economic growth and multilateral cooperation.</p>
-                            <p><strong>What I Hope to Achieve:</strong> Ali aims to support initiatives through resource allocation frameworks.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Ali Al Dailati</h3>
+                        <p class="team-card-home">Lebanon</p>
+                        <p class="team-card-bio">Ali is a freshman majoring in Biology and minoring in Political Science. He is a big aviation enthusiast and an avid political thinker!</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> He joined CGF to engage with emerging Gulf-China partnerships driving economic growth and multilateral cooperation.</p>
+                        <p><strong>What I Hope to Achieve:</strong> Ali aims to support initiatives through resource allocation frameworks.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Jingyi Ma</h3>
-                            <p><strong>Where do you call home?</strong> Shanghai</p>
-                            <p><strong>Bio:</strong> Jingyi is a visiting student from NYU Shanghai, junior year, majoring in Economics. She enjoys sports, crafting and writing, and helping animals.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> She decided to join more events helpful for her development and deepen her engagement with the region.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She hopes to gain skills in management and leadership and help people embrace diverse cultures.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Jingyi Ma</h3>
+                        <p class="team-card-home">Shanghai</p>
+                        <p class="team-card-bio">Jingyi is a visiting student from NYU Shanghai, junior year, majoring in Economics. She enjoys sports, crafting and writing, and helping animals.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> She decided to join more events helpful for her development and deepen her engagement with the region.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She hopes to gain skills in management and leadership and help people embrace diverse cultures.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Luyi Yang</h3>
-                            <p><strong>Where do you call home?</strong> China</p>
-                            <p><strong>Bio:</strong> Luyi is a visiting student from NYU Shanghai, double majoring in Business and Finance &amp; Social Science.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> She is interested in the dynamic relationship between China and the Gulf.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She hopes to meet new friends and gain new insights through CGF.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Luyi Yang</h3>
+                        <p class="team-card-home">China</p>
+                        <p class="team-card-bio">Luyi is a visiting student from NYU Shanghai, double majoring in Business and Finance &amp; Social Science.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> She is interested in the dynamic relationship between China and the Gulf.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She hopes to meet new friends and gain new insights through CGF.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Qiuyu Guo</h3>
-                            <p><strong>Where do you call home?</strong> China</p>
-                            <p><strong>Bio:</strong> Qiuyu is a sophomore double majoring in Economics and Mathematics at NYUAD. She is the Head of Operations and Budgeting.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> Deep interest in the evolving China-Gulf relationship, particularly in economic collaboration, trade, and policy.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She hopes to deepen her understanding of the China-Gulf economic relationship in finance, sustainability, and emerging markets.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Qiuyu Guo</h3>
+                        <p class="team-card-home">China</p>
+                        <p class="team-card-bio">Qiuyu is a sophomore double majoring in Economics and Mathematics at NYUAD. She is the Head of Operations and Budgeting.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> Deep interest in the evolving China-Gulf relationship, particularly in economic collaboration, trade, and policy.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She hopes to deepen her understanding of the China-Gulf economic relationship in finance, sustainability, and emerging markets.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- AD Technology & Innovation -->
-        <div class="team-section">
-            <h2 class="team-title">AD Technology &amp; Innovation</h2>
+        <div class="team-section" data-animate="fade-up">
+            <h2 class="team-dept-title">AD Technology &amp; Innovation</h2>
             <div class="team-grid">
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Katerina Fialova</h3>
-                            <p><strong>Where do you call home?</strong> Czech Republic</p>
-                            <p><strong>Bio:</strong> Katerina is a senior majoring in Physics with a specialization in Astrophysics. She is passionate about space exploration and Chinese and UAE space missions.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> She recognized the rapid growth of China's space industry and wanted to create a space-focused panel.</p>
-                            <p><strong>What I Hope to Achieve:</strong> Foster discussions on space cooperation and bring attention to emerging opportunities.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Katerina Fialova</h3>
+                        <p class="team-card-home">Czech Republic</p>
+                        <p class="team-card-bio">Katerina is a senior majoring in Physics with a specialization in Astrophysics. She is passionate about space exploration and Chinese and UAE space missions.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> She recognized the rapid growth of China's space industry and wanted to create a space-focused panel.</p>
+                        <p><strong>What I Hope to Achieve:</strong> Foster discussions on space cooperation and bring attention to emerging opportunities.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Yanlin Wu</h3>
-                            <p><strong>Where do you call home?</strong> China</p>
-                            <p><strong>Bio:</strong> Yanlin is a junior majoring in CS and minoring in applied math and economics. She loves wall climbing and dogs.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> She loves the potential of the collaboration between China and the Gulf.</p>
-                            <p><strong>What I Hope to Achieve:</strong> She wants to hone her web design skills.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Yanlin Wu</h3>
+                        <p class="team-card-home">China</p>
+                        <p class="team-card-bio">Yanlin is a junior majoring in CS and minoring in applied math and economics. She loves wall climbing and dogs.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> She loves the potential of the collaboration between China and the Gulf.</p>
+                        <p><strong>What I Hope to Achieve:</strong> She wants to hone her web design skills.</p>
                     </div>
                 </div>
-                <div class="team-member" onclick="flipCard(this)">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Sophie Lin</h3>
-                            <p><strong>Where do you call home?</strong> China</p>
-                            <p><strong>Bio:</strong> Sophie is a third-year Computer Science student at NYU Abu Dhabi. Enthusiastic Full Stack Developer and Data Analyst with 10 years of violin experience.</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p><strong>Why I Joined:</strong> She is inspired by the team's impactful initiatives like roundtable discussions on professional development and cross-border investment.</p>
-                            <p><strong>What I Hope to Achieve:</strong> As a member of the tech team, she aims to foster deeper conversations in the tech field.</p>
-                        </div>
+                <div class="team-card">
+                    <div class="team-card-front">
+                        <h3 class="team-card-name">Sophie Lin</h3>
+                        <p class="team-card-home">China</p>
+                        <p class="team-card-bio">Sophie is a third-year Computer Science student at NYU Abu Dhabi. Enthusiastic Full Stack Developer and Data Analyst with 10 years of violin experience.</p>
+                    </div>
+                    <div class="team-card-overlay">
+                        <p><strong>Why I Joined:</strong> She is inspired by the team's impactful initiatives like roundtable discussions on professional development and cross-border investment.</p>
+                        <p><strong>What I Hope to Achieve:</strong> As a member of the tech team, she aims to foster deeper conversations in the tech field.</p>
                     </div>
                 </div>
             </div>
         </div>
 
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="var(--maroon-dark)"/>
+        </svg>
     </div>
 
     <!-- Footer -->
@@ -542,6 +404,11 @@
             <p>&copy; 2026 China-Gulf Forum. A student-led initiative fostering China-Gulf dialogue since 2019.</p>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

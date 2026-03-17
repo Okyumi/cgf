@@ -19,6 +19,9 @@
 </head>
 <body>
 
+    <!-- Gold accent line -->
+    <div class="gold-accent-line"></div>
+
     <!-- Navigation -->
     <nav class="cgf-navbar navbar navbar-expand-lg">
         <div class="container">
@@ -43,21 +46,26 @@
 
     <!-- Page Header -->
     <div class="events-header">
-        <div class="container">
+        <div class="events-header-pattern"></div>
+        <div class="container" style="position: relative; z-index: 1;">
             <h1>Previous Events</h1>
             <hr class="gold-divider">
+            <p class="events-header-tagline">Highlights and recaps from our past forums and events</p>
         </div>
     </div>
 
     <!-- Events Content -->
-    <div class="events-container">
+    <div class="events-container events-timeline">
 
         <!-- Event 1: Goldman Sachs Fireside Chat -->
-        <div class="event-block">
+        <div class="event-block" data-animate="fade-up">
+            <div class="event-badge">Event Recap</div>
             <div class="row g-0">
-                <div class="col-lg-5 event-img" style="background-image: url('media/photos/recaps/use1.jpg')"></div>
+                <div class="col-lg-5 event-img-wrapper">
+                    <div class="event-img" style="background-image: url('media/photos/recaps/use1.jpg')"></div>
+                </div>
                 <div class="col-lg-7 event-text">
-                    <h4>Event Recap: Fireside Chat with Goldman Sachs Investment Bank</h4>
+                    <h4>Fireside Chat with Goldman Sachs Investment Bank</h4>
                     <hr class="gold-divider gold-divider-left">
                     <p>On February 21, the China-Gulf Forum invited Rachel Yao, the Associate of Goldman Sachs Investment Bank, for a fireside chat at NYUAD, and successfully offered NYU students an in-depth industry exchange. Drawing from her own experiences, Rachel offered a detailed analysis of the day-to-day operations of investment banking, the workings of Debt Capital Markets and Leveraged Finance, and Goldman Sachs' role in China and the Gulf region. She also shared practical advice on applying to investment banks.</p>
                 </div>
@@ -65,9 +73,12 @@
         </div>
 
         <!-- Event 2: Day of an Investment Banker -->
-        <div class="event-block">
+        <div class="event-block" data-animate="fade-up">
+            <div class="event-badge">Industry Insight</div>
             <div class="row g-0">
-                <div class="col-lg-5 order-lg-2 event-img" style="background-image: url('media/photos/recaps/use2.jpg')"></div>
+                <div class="col-lg-5 order-lg-2 event-img-wrapper">
+                    <div class="event-img" style="background-image: url('media/photos/recaps/use2.jpg')"></div>
+                </div>
                 <div class="col-lg-7 order-lg-1 event-text">
                     <h2>Day of an Investment Banker</h2>
                     <hr class="gold-divider gold-divider-left">
@@ -77,9 +88,12 @@
         </div>
 
         <!-- Event 3: Goldman Sachs in China & Gulf -->
-        <div class="event-block">
+        <div class="event-block" data-animate="fade-up">
+            <div class="event-badge">Panel Discussion</div>
             <div class="row g-0">
-                <div class="col-lg-5 event-img" style="background-image: url('media/photos/recaps/use3.jpg')"></div>
+                <div class="col-lg-5 event-img-wrapper">
+                    <div class="event-img" style="background-image: url('media/photos/recaps/use3.jpg')"></div>
+                </div>
                 <div class="col-lg-7 event-text">
                     <h4>Goldman Sachs' Development in China and the Gulf Region</h4>
                     <hr class="gold-divider gold-divider-left">
@@ -89,9 +103,12 @@
         </div>
 
         <!-- Event 4: Recruiting Tips -->
-        <div class="event-block">
+        <div class="event-block" data-animate="fade-up">
+            <div class="event-badge">Career Development</div>
             <div class="row g-0">
-                <div class="col-lg-5 order-lg-2 event-img" style="background-image: url('media/photos/recaps/use4.jpg')"></div>
+                <div class="col-lg-5 order-lg-2 event-img-wrapper">
+                    <div class="event-img" style="background-image: url('media/photos/recaps/use4.jpg')"></div>
+                </div>
                 <div class="col-lg-7 order-lg-1 event-text">
                     <h4>Recruiting Tips for Students</h4>
                     <hr class="gold-divider gold-divider-left">
@@ -107,11 +124,24 @@
         </div>
 
         <!-- Follow Us -->
-        <div class="text-center py-4">
-            <h3 class="text-maroon">Follow Us</h3>
+        <div class="events-follow-section" data-animate="fade-up">
+            <h3>Follow Us</h3>
             <hr class="gold-divider">
             <p>Stay updated with our latest events and insights.</p>
+            <div class="events-social-links">
+                <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzk0NDE5NTkwMQ==&scene=124#wechat_redirect" target="_blank" title="WeChat"><img src="media/icons/wechat.svg" alt="WeChat" loading="lazy"></a>
+                <a href="https://www.instagram.com/china_gulf_forum/" target="_blank" title="Instagram"><img src="media/icons/instagram.svg" alt="Instagram" loading="lazy"></a>
+                <a href="https://www.linkedin.com/company/china-gulf-forum/posts/?feedView=all" target="_blank" title="LinkedIn"><img src="media/icons/linkedin.svg" alt="LinkedIn" loading="lazy"></a>
+                <a href="mailto:china-gulf-forum-nyuad@nyu.edu" title="Email"><img src="media/icons/mail.png" alt="Email" loading="lazy"></a>
+            </div>
         </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="var(--maroon-dark)"/>
+        </svg>
     </div>
 
     <!-- Footer -->
@@ -131,6 +161,11 @@
             <p>&copy; 2026 China-Gulf Forum. A student-led initiative fostering China-Gulf dialogue since 2019.</p>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
