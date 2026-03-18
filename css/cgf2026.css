@@ -1626,3 +1626,289 @@ img {
     opacity: 1;
   }
 }
+
+/* ========================================
+   UPGRADE 1: SCROLL PROGRESS INDICATOR
+   ======================================== */
+.scroll-progress {
+  position: fixed;
+  top: 2px;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  width: 0%;
+  z-index: 1061;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
+
+/* ========================================
+   UPGRADE 2: HERO TEXT ENTRANCE ANIMATION
+   ======================================== */
+.hero-content .hero-title,
+.hero-content .hero-tagline,
+.hero-content .hero-cta {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.hero-content.hero-revealed .hero-title {
+  animation: heroFadeIn 0.8s ease forwards 0.3s;
+}
+.hero-content.hero-revealed .hero-tagline {
+  animation: heroFadeIn 0.8s ease forwards 0.6s;
+}
+.hero-content.hero-revealed .hero-cta {
+  animation: heroFadeIn 0.8s ease forwards 0.9s;
+}
+
+@keyframes heroFadeIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================================
+   UPGRADE 4: SMOOTH IMAGE REVEAL ON SCROLL
+   ======================================== */
+.img-reveal {
+  position: relative;
+  overflow: hidden;
+}
+.img-reveal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--cream-light);
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 2;
+}
+.img-reveal.revealed::after {
+  transform: scaleX(0);
+}
+
+/* ========================================
+   UPGRADE 5: PANEL CARD ACCORDION
+   ======================================== */
+.panel-accordion-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--cream-dark);
+  padding: 0.6rem 0;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+  transition: color var(--transition);
+}
+
+.panel-accordion-trigger:hover {
+  color: var(--gold);
+}
+
+.panel-accordion-trigger svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.panel-accordion.open .panel-accordion-trigger svg {
+  transform: rotate(180deg);
+}
+
+.panel-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.panel-accordion.open .panel-accordion-content {
+  max-height: 600px;
+}
+
+/* ========================================
+   UPGRADE 6: TEAM CARD STAGGERED ENTRANCE
+   ======================================== */
+.team-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, box-shadow var(--transition);
+}
+
+.team-card.card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+/* ========================================
+   UPGRADE 7: GROWTH BAR TOOLTIPS
+   ======================================== */
+.growth-bar {
+  position: relative;
+}
+
+.growth-bar::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background: var(--ink);
+  color: var(--white);
+  font-size: 0.72rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.growth-bar:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ========================================
+   UPGRADE 8: CONTACT FORM FLOATING LABELS
+   ======================================== */
+.form-group-float {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-group-float input,
+.form-group-float textarea {
+  width: 100%;
+  padding: 1.2rem 1rem 0.5rem;
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius-sm);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  background: var(--cream-light);
+  transition: border-color var(--transition);
+  outline: none;
+  margin-bottom: 0;
+}
+
+.form-group-float label {
+  position: absolute;
+  left: 1rem;
+  top: 0.85rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  display: block;
+  margin-bottom: 0;
+}
+
+.form-group-float input:focus ~ label,
+.form-group-float input:not(:placeholder-shown) ~ label,
+.form-group-float textarea:focus ~ label,
+.form-group-float textarea:not(:placeholder-shown) ~ label {
+  top: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Gold underline expand from center */
+.form-group-float::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.form-group-float:focus-within::after {
+  width: 100%;
+  left: 0;
+}
+
+.form-group-float input:focus,
+.form-group-float textarea:focus {
+  border-color: var(--gold);
+  box-shadow: none;
+}
+
+/* ========================================
+   UPGRADE 9: PANEL CARD HOVER BORDER TRANSITION
+   ======================================== */
+.panel-card {
+  transition: all var(--transition), border-color 0.4s ease;
+}
+
+.panel-card:hover {
+  border-left-color: var(--gold);
+}
+
+/* ========================================
+   UPGRADE 10: FOOTER SOCIAL ICON HOVER GLOW
+   ======================================== */
+.cgf-footer .footer-social a:hover {
+  background: rgba(196, 163, 90, 0.25);
+  box-shadow: 0 0 16px rgba(196, 163, 90, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Footer social tooltip */
+.cgf-footer .footer-social a {
+  position: relative;
+}
+
+.cgf-footer .footer-social a::after {
+  content: attr(title);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background: var(--ink);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cgf-footer .footer-social a:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ========================================
+   UPGRADE 11: SMOOTH PAGE TRANSITION
+   ======================================== */
+body {
+  transition: opacity 0.3s ease;
+}
+
+body.page-exit {
+  opacity: 0;
+}

@@ -19,6 +19,11 @@
 </head>
 <body>
 
+    <!-- Gold accent line -->
+    <div class="gold-accent-line"></div>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Navigation -->
     <nav class="cgf-navbar navbar navbar-expand-lg">
         <div class="container">
@@ -54,62 +59,85 @@
     <div class="panels-container">
 
         <!-- Panel 1 — Business & Finance -->
-        <div class="panel-card">
+        <div class="panel-card" data-animate="fade-up">
             <div class="panel-number">Panel 1 — Business &amp; Finance</div>
             <h2>Digital Transformation and the Future of Finance:</h2>
             <div class="panel-subtitle">Inclusion and Regulation in China and the Gulf</div>
             <p class="panel-body">This panel explores how China and the Gulf are building digital finance separately and together, from interoperable payments to enabling regulatory sandboxes. What drives financial inclusion and prosperity in markets? How can regulations become more interconnective? Will future capital flows be shaped by digital trust rather than borders?</p>
-            <div class="discussion-header">Discussion Questions</div>
-            <ol class="discussion-questions">
-                <li>Should financial free zones expand their role to reduce regulatory friction and enable simultaneous multi-market launches? As fintech outpaces regulation, products are often licensed in the Gulf but not yet recognized in Asia.</li>
-                <li>How is real-world asset tokenization reshaping access and liquidity in bilateral investment, and what regulatory frameworks are needed to build global confidence?</li>
-                <li>How can real-time payments and digital currencies realistically deliver instant, near-zero-cost cross-border settlement, and what key barrier remains?</li>
-            </ol>
+            <div class="panel-accordion">
+                <button class="panel-accordion-trigger">Discussion Questions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <div class="panel-accordion-content">
+                    <ol class="discussion-questions">
+                        <li>Should financial free zones expand their role to reduce regulatory friction and enable simultaneous multi-market launches? As fintech outpaces regulation, products are often licensed in the Gulf but not yet recognized in Asia.</li>
+                        <li>How is real-world asset tokenization reshaping access and liquidity in bilateral investment, and what regulatory frameworks are needed to build global confidence?</li>
+                        <li>How can real-time payments and digital currencies realistically deliver instant, near-zero-cost cross-border settlement, and what key barrier remains?</li>
+                    </ol>
+                </div>
+            </div>
         </div>
 
         <!-- Panel 2 — International Relations -->
-        <div class="panel-card">
+        <div class="panel-card" data-animate="fade-up">
             <div class="panel-number">Panel 2 — International Relations</div>
             <h2>China, the Gulf, and the Global South:</h2>
             <div class="panel-subtitle">Sustainable Peace-Making in the Era of Geopolitical Conflict</div>
             <p class="panel-body">As the world becomes multipolar, China and the Gulf states are emerging as key actors in peace-making. From the Saudi-Iran breakthrough to the Abraham Accords, we stress stability, sovereignty, and economic ties. This panel examines how China and the Gulf countries may shape future mediation and global security within the Middle East and in broader Global South.</p>
-            <div class="discussion-header">Discussion Questions</div>
-            <ol class="discussion-questions">
-                <li>How do you see the current geopolitical tensions reshaping the expectations placed on China and the Gulf region? Are they viewed more as potential peace brokers or spectators?</li>
-                <li>How do China and the Gulf stand together to further their interests, strategically and economically, by taking on a more active broking role in geopolitical conflict?</li>
-                <li>Given both regions have historically preferred quiet diplomacy, what would a more proactive mediation strategy look like in practice, and how far do you think each side is willing to go?</li>
-            </ol>
+            <div class="panel-accordion">
+                <button class="panel-accordion-trigger">Discussion Questions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <div class="panel-accordion-content">
+                    <ol class="discussion-questions">
+                        <li>How do you see the current geopolitical tensions reshaping the expectations placed on China and the Gulf region? Are they viewed more as potential peace brokers or spectators?</li>
+                        <li>How do China and the Gulf stand together to further their interests, strategically and economically, by taking on a more active broking role in geopolitical conflict?</li>
+                        <li>Given both regions have historically preferred quiet diplomacy, what would a more proactive mediation strategy look like in practice, and how far do you think each side is willing to go?</li>
+                    </ol>
+                </div>
+            </div>
         </div>
 
         <!-- Panel 3 — Technology & Innovation -->
-        <div class="panel-card">
+        <div class="panel-card" data-animate="fade-up">
             <div class="panel-number">Panel 3 — Technology &amp; Innovation</div>
             <h2>Innovation for Integration and Impact:</h2>
             <div class="panel-subtitle">Applying Global Tech in Local Human Realities</div>
             <p class="panel-body">Building a powerful model or product is one thing; making it work within a specific domain and culture is another. This panel moves past the 'AI' 'Web3' hypes to examine the tension between global innovation and local customs, a universal model versus human disparities. What are the focus areas to shape the future of China and the Gulf? How do cultural habits guide technology adoption? Do emerging tools address social problems beyond profit?</p>
-            <div class="discussion-header">Discussion Questions</div>
-            <ol class="discussion-questions">
-                <li>The "super app" model works in China. Did you attempt to bring it to the Gulf, or abandon it altogether? What cultural barriers did you encounter, and what changes were necessary to build trust?</li>
-                <li>Was there a deal where the metrics looked weak, say slow growth or a small market, but you invested anyway because of a contrarian view on the region?</li>
-                <li>Is there a social project where unit economics worked without subsidy? What are the gaps between building code and building trust?</li>
-                <li>Is there a human concept or cultural rule that AI consistently fails to learn, regardless of data?</li>
-            </ol>
+            <div class="panel-accordion">
+                <button class="panel-accordion-trigger">Discussion Questions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <div class="panel-accordion-content">
+                    <ol class="discussion-questions">
+                        <li>The "super app" model works in China. Did you attempt to bring it to the Gulf, or abandon it altogether? What cultural barriers did you encounter, and what changes were necessary to build trust?</li>
+                        <li>Was there a deal where the metrics looked weak, say slow growth or a small market, but you invested anyway because of a contrarian view on the region?</li>
+                        <li>Is there a social project where unit economics worked without subsidy? What are the gaps between building code and building trust?</li>
+                        <li>Is there a human concept or cultural rule that AI consistently fails to learn, regardless of data?</li>
+                    </ol>
+                </div>
+            </div>
         </div>
 
         <!-- Panel 4 — Arts & Culture -->
-        <div class="panel-card">
+        <div class="panel-card" data-animate="fade-up">
             <div class="panel-number">Panel 4 — Arts &amp; Culture</div>
             <h2>Audience to Actor:</h2>
             <div class="panel-subtitle">Reimagining Cultural Interaction and Influence</div>
             <p class="panel-body">The 2025-2026 period marks a turning point in Abu Dhabi's cultural scene, as major museum openings transform how audiences engage with art and heritage. Across the Gulf and China, institutions are shifting toward immersive, participatory experiences that actively involve audiences in shaping cultural narratives and building cultural outreach.</p>
-            <div class="discussion-header">Discussion Questions</div>
-            <ol class="discussion-questions">
-                <li>How can cultural experiences move audiences from observation to participation and co-creation?</li>
-                <li>What ethical and creative questions emerge when technology serves as the main medium for art or cultural expression? How can technology enhance content creation and sharing while preserving authenticity and emotion?</li>
-                <li>How can the Gulf and China collaborate to develop innovative models of cultural experience design?</li>
-            </ol>
+            <div class="panel-accordion">
+                <button class="panel-accordion-trigger">Discussion Questions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <div class="panel-accordion-content">
+                    <ol class="discussion-questions">
+                        <li>How can cultural experiences move audiences from observation to participation and co-creation?</li>
+                        <li>What ethical and creative questions emerge when technology serves as the main medium for art or cultural expression? How can technology enhance content creation and sharing while preserving authenticity and emotion?</li>
+                        <li>How can the Gulf and China collaborate to develop innovative models of cultural experience design?</li>
+                    </ol>
+                </div>
+            </div>
         </div>
 
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="var(--maroon-dark)"/>
+        </svg>
     </div>
 
     <!-- Footer -->
@@ -129,6 +157,11 @@
             <p>&copy; 2026 China-Gulf Forum. A student-led initiative fostering China-Gulf dialogue since 2019.</p>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
