@@ -1,177 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>China Gulf Forum</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet"/>
-        <link href="css/newflexbox.css" rel="stylesheet"/>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-                text-align: center;
-            }
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="CGF 2026 Panels — Business & Finance, International Relations, Technology & Innovation, Arts & Culture" />
+    <meta name="author" content="China-Gulf Forum" />
+    <title>Panels — China-Gulf Forum 2026</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CGF 2026 Theme -->
+    <link href="css/cgf2026.css" rel="stylesheet" />
+</head>
+<body>
 
-            .navbar {
-                position: -webkit-sticky; /* For Safari */
-                position: sticky;
-                top: 0;
-                z-index: 1000;
-                background-color: rgb(145, 47, 47)!important; /* Ensure the background matches your design */
-            }
-            .container {
-                width: 90%;
-                margin: auto;
-            }
+    <!-- Gold accent line -->
+    <div class="gold-accent-line"></div>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-            .container_body {
-                max-width: 900px;
-                margin: 0 auto;
-                background: white;
-                padding: 30px;
-                border-radius: 8px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            }
-            h1 {
-                text-align: center;
-                color: #003366;
-                font-size: 28px;
-                margin-bottom: 20px;
-            }
-            p {
-                text-align: center;
-                color: #555;
-                font-size: 16px;
-                margin-bottom: 30px;
-            }
-            .panel {
-                margin-bottom: 25px;
-                padding: 20px;
-                border-left: 5px solid #003366;
-                background-color: #f9f9f9;
-                border-radius: 6px;
-                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            }
-            .panel h2 {
-                color: #003366;
-                font-size: 22px;
-                margin-bottom: 10px;
-            }
-            .panel h3 {
-                color: #666;
-                font-size: 18px;
-                margin-top: 5px;
-            }
-            .panel p {
-                color: #444;
-                font-size: 14px;
-            }
-            .panel ul {
-                padding-left: 20px;
-                color: #444;
-            }
-            .panel ul li {
-                margin-bottom: 8px;
-            }
-        </style>
-    </head>
-    <body>
-         <!-- nav bar-->
-         <nav class="navbar navbar-light static-top">
-            <div class="container d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="index.html"><img src="CGF2025logo.png" style="height: 3em; width: auto;"></a>
-                <!-- links -->
-                <div class="d-flex">
-                    <a class="btn btn-primary text-white" href="panel.html">Panels</a>
-                    <a class="btn btn-primary text-white" href="partners.html">Team Member</a>
-                    <a class="btn btn-primary text-white" href="about.html">Previous Events</a>
-                    <a class="btn btn-primary text-white" href="https://nyuad.nyu.edu/en/events/2024/april/china-gulf-forum-2024.html">Register</a>
-                    <a class="btn btn-primary text-white" href="contact.html">Contact</a>
+    <!-- Navigation -->
+    <nav class="cgf-navbar navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="media/logo/CGF2025logo.png" alt="China-Gulf Forum 2026" style="height: 3em; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cgfNav" aria-controls="cgfNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="cgfNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="panel.html">Panels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://nyuad.nyu.edu/en/events/2024/april/china-gulf-forum-2024.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="panels-header">
+        <div class="container">
+            <h1>CGF 2026 Panels</h1>
+            <hr class="gold-divider">
+            <p>Exploring key topics in China-Gulf cooperation</p>
+        </div>
+    </div>
+
+    <!-- Panels -->
+    <div class="panels-container">
+
+        <!-- Panel 1 — Business & Finance -->
+        <div class="panel-card" data-animate="fade-up">
+            <div class="panel-number">Panel 1 — Business &amp; Finance</div>
+            <h2>Digital Transformation and the Future of Finance:</h2>
+            <div class="panel-subtitle">Inclusion and Regulation in China and the Gulf</div>
+            <p class="panel-body">This panel explores how China and the Gulf are building digital finance separately and together, from interoperable payments to enabling regulatory sandboxes. What drives financial inclusion and prosperity in markets? How can regulations become more interconnective? Will future capital flows be shaped by digital trust rather than borders?</p>
+            <div class="panel-accordion">
+                <button class="panel-accordion-trigger">Discussion Questions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <div class="panel-accordion-content">
+                    <ol class="discussion-questions">
+                        <li>Should financial free zones expand their role to reduce regulatory friction and enable simultaneous multi-market launches? As fintech outpaces regulation, products are often licensed in the Gulf but not yet recognized in Asia.</li>
+                        <li>How is real-world asset tokenization reshaping access and liquidity in bilateral investment, and what regulatory frameworks are needed to build global confidence?</li>
+                        <li>How can real-time payments and digital currencies realistically deliver instant, near-zero-cost cross-border settlement, and what key barrier remains?</li>
+                    </ol>
                 </div>
             </div>
-        </nav>
-        <br>
-
-
-        <div class="container_body">
-            <h1>Our Organization Panels</h1>
-            <p>Exploring key topics in China-Gulf cooperation</p>
-            
-            <div class="panel">
-                <h2>Business, Economics, & Finance Panel</h2>
-                <h3>Starting From QFII: New Dynamics of Asset Allocations in China, Gulf, and Beyond</h3>
-                <p>The growing trade and overseas direct investments (ODIs) between China and the Gulf have paved the way for more sophisticated investment channels. A significant milestone came in 2020 and 2021 when China eased restrictions on the Qualified Foreign Institutional Investor (QFII) and Qualified Domestic Limited Partnership (QDLP) scheme. By removing investment quotas, simplifying application processes, and relaxing ownership requirements, China has established a path to facilitate multilateral investments across a diverse range of asset classes, especially between the Gulf region and China.
-                    Similar efforts have also been seen in the Gulf states which brought enormous growth in the financial sectors for the past decade contributing to regional economic diversification. This panel will explore the evolving role of asset allocation and financial institutions in fostering investments between China and the Gulf. The discussion aims to explore the opportunities and challenges of investing in these regions, the broader implications for asset allocations across emerging markets, and the mechanisms needed to strengthen cross-regional financial cooperation.</p>
-                <!-- <h4>Key Activities:</h4>
-                <ul>
-                    <li>Panel Discussion</li>
-                    <li>Networking Session: Facilitating connections among business leaders, policymakers, and investors</li>
-                    
-                    
-                </ul> -->
-                <!-- <h4>Running Script:</h4>
-                <ul>
-                    <li>Do you think the Gulf’s investment in China is at the peak or on the rise?</li>
-                    <li>What are the key trends that will shape China-Gulf financial cooperation over the next five to ten years?</li>
-                    <li>What are the key industries or asset classes where we see the most promising investment opportunities?</li>
-                    <li>What is your investment strategy?</li>
-                </ul> -->
-            </div>
-            
-            <div class="panel">
-                <h2>International Trade & Relations Panel</h2>
-                <h3>Redefining Global Collaboration: The UAE, China, and the Future of the Global South</h3>
-                <p>The rise of the Global South as a formidable force in international economic and political affairs is reshaping the global order. With emerging economies forging stronger alliances, the UAE has positioned itself as a key mediator and innovator in this transformation. Its active participation in multilateral initiatives—such as the launch of the Centre for Industrial Competences and exploration of alternative financial systems—demonstrates its commitment to fostering financial sovereignty and regional cooperation. 
-                    China, as a leading economic powerhouse, and the UAE, as a strategic trade and financial hub, are uniquely poised to bridge economic and policy gaps between the Global South and Western economies. Their collaboration extends beyond traditional trade relations to encompass financial innovation, digital currency adoption, and the push for de-dollarization. As nations across Africa, Asia, and Latin America seek greater autonomy in financial and industrial development, the UAE and China can serve as catalysts for inclusive growth and sustainable partnerships. 
-                    This panel will examine how the UAE and China can drive economic resilience, foster regional peace, and redefine global collaboration within the Global South. Key topics include financial innovation, industrial partnerships, and the UAE’s expanding role as a representative of the Gulf region in this emerging economic landscape. 
-                </p>
-               
-            </div>
-
-            <div class="panel">
-                <h2>Arts & Culture Panel</h2>
-                <h3>Developing Performing Arts: Cultural diversity and identity</h3>
-                <p>We are witnessing the development of performing arts scene in both countries: diverse productions from across the world were invited, original productions stemming from unique culture roots were created, institutions promoting art’s development were established. We want to dive deeper into the developing field. 
-                    Key questions include: What are the roles and responsibilities of different stakeholders in the performing arts scene in its development? With international exchange, how can we find our culture identity in a diverse environment? Can art be shared between Gulf and China? How can performing arts keep up with the development of technology?</p>
-               
-            </div>
-
-            <div class="panel">
-                <h2>Technology & Innovation Panel</h2>
-                <h3>Strengthening China-Gulf Cooperation through Space Exploration</h3>
-                <p>This panel will explore how China and the Gulf can work together to build a better future using Space exploration and Technology. We will explore how satellites and space technology can be leveraged to improve disaster predictions, enhance resource management, and strengthen regional communication systems. It will also examine lessons the Gulf and China can share about integrating satellite data into disaster management frameworks. Looking toward the future, the session will highlight the Gulf’s and China’s plans for space missions and explore how the two regions can collaborate on ambitious projects, such as lunar and Mars exploration, and how partnerships in research and innovation can maximize the benefits of space exploration. A critical focus will be on developing policies to ensure the safe and sustainable use of outer space, including aligning on issues like space debris mitigation, satellite regulations, and governance frameworks. The panel will also discuss how China and the Gulf can inspire and engage students in space-related careers by sharing successful initiatives and programs that teach the next generation of space scientists, engineers, and policymakers. Additionally, it will address the importance of equitable sharing of space technology to support developing nations, helping with inclusivity and accessibility to space innovations. </p>
-               
-            </div>
-
         </div>
 
-         <!-- Footer-->
-         <footer>
-            <img src="CGF2025logo.png" style="height: 3em; width: auto;">
-            <section>
-                <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzk0NDE5NTkwMQ==&scene=124#wechat_redirect" target="_blank" title="LinkedIn"><img src="wechat.svg" alt="wechat Icon" style="height:24px; width:24px"></a>
-                <a href="https://www.instagram.com/china_gulf_forum/" target="_blank" title="LinkedIn"><img src="instagram.svg" alt="instagram Icon" style="height:24px; width:24px"></a>
-                <a href="https://www.linkedin.com/company/china-gulf-forum/posts/?feedView=all" target="_blank" title="LinkedIn"><img src="linkedin.svg" alt="LinkedIn Icon"></a>
-                <a href="mailto:china-gulf-forum-nyuad@nyu.edu" title="Send Email"><img src="mail.png" alt="Email Icon"></a>
-            </section>
-        </footer>
+        <!-- Panel 2 — International Relations -->
+        <div class="panel-card" data-animate="fade-up">
+            <div class="panel-number">Panel 2 — International Relations</div>
+            <h2>China, the Gulf, and the Global South:</h2>
+            <div class="panel-subtitle">Sustainable Peace-Making in the Era of Geopolitical Conflict</div>
+            <p class="panel-body">As the world becomes multipolar, China and the Gulf states are emerging as key actors in peace-making. From the Saudi-Iran breakthrough to the Abraham Accords, we stress stability, sovereignty, and economic ties. This panel examines how China and the Gulf countries may shape future mediation and global security within the Middle East and in broader Global South.</p>
+            <div class="panel-accordion">
+                <button class="panel-accordion-trigger">Discussion Questions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <div class="panel-accordion-content">
+                    <ol class="discussion-questions">
+                        <li>How do you see the current geopolitical tensions reshaping the expectations placed on China and the Gulf region? Are they viewed more as potential peace brokers or spectators?</li>
+                        <li>How do China and the Gulf stand together to further their interests, strategically and economically, by taking on a more active broking role in geopolitical conflict?</li>
+                        <li>Given both regions have historically preferred quiet diplomacy, what would a more proactive mediation strategy look like in practice, and how far do you think each side is willing to go?</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-    
+        <!-- Panel 3 — Technology & Innovation -->
+        <div class="panel-card" data-animate="fade-up">
+            <div class="panel-number">Panel 3 — Technology &amp; Innovation</div>
+            <h2>Innovation for Integration and Impact:</h2>
+            <div class="panel-subtitle">Applying Global Tech in Local Human Realities</div>
+            <p class="panel-body">Building a powerful model or product is one thing; making it work within a specific domain and culture is another. This panel moves past the 'AI' 'Web3' hypes to examine the tension between global innovation and local customs, a universal model versus human disparities. What are the focus areas to shape the future of China and the Gulf? How do cultural habits guide technology adoption? Do emerging tools address social problems beyond profit?</p>
+            <div class="panel-accordion">
+                <button class="panel-accordion-trigger">Discussion Questions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <div class="panel-accordion-content">
+                    <ol class="discussion-questions">
+                        <li>The "super app" model works in China. Did you attempt to bring it to the Gulf, or abandon it altogether? What cultural barriers did you encounter, and what changes were necessary to build trust?</li>
+                        <li>Was there a deal where the metrics looked weak, say slow growth or a small market, but you invested anyway because of a contrarian view on the region?</li>
+                        <li>Is there a social project where unit economics worked without subsidy? What are the gaps between building code and building trust?</li>
+                        <li>Is there a human concept or cultural rule that AI consistently fails to learn, regardless of data?</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel 4 — Arts & Culture -->
+        <div class="panel-card" data-animate="fade-up">
+            <div class="panel-number">Panel 4 — Arts &amp; Culture</div>
+            <h2>Audience to Actor:</h2>
+            <div class="panel-subtitle">Reimagining Cultural Interaction and Influence</div>
+            <p class="panel-body">The 2025-2026 period marks a turning point in Abu Dhabi's cultural scene, as major museum openings transform how audiences engage with art and heritage. Across the Gulf and China, institutions are shifting toward immersive, participatory experiences that actively involve audiences in shaping cultural narratives and building cultural outreach.</p>
+            <div class="panel-accordion">
+                <button class="panel-accordion-trigger">Discussion Questions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                <div class="panel-accordion-content">
+                    <ol class="discussion-questions">
+                        <li>How can cultural experiences move audiences from observation to participation and co-creation?</li>
+                        <li>What ethical and creative questions emerge when technology serves as the main medium for art or cultural expression? How can technology enhance content creation and sharing while preserving authenticity and emotion?</li>
+                        <li>How can the Gulf and China collaborate to develop innovative models of cultural experience design?</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="var(--maroon-dark)"/>
+        </svg>
+    </div>
+
+    <!-- Footer -->
+    <footer class="cgf-footer">
+        <div class="footer-inner">
+            <a href="index.html" class="footer-brand">
+                <img src="media/logo/CGF2025logo.png" alt="China-Gulf Forum 2026" style="height: 3em; width: auto;">
+            </a>
+            <div class="footer-social">
+                <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzk0NDE5NTkwMQ==&scene=124#wechat_redirect" target="_blank" title="WeChat"><img src="media/icons/wechat.svg" alt="WeChat"></a>
+                <a href="https://www.instagram.com/china_gulf_forum/" target="_blank" title="Instagram"><img src="media/icons/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/company/china-gulf-forum/posts/?feedView=all" target="_blank" title="LinkedIn"><img src="media/icons/linkedin.svg" alt="LinkedIn"></a>
+                <a href="mailto:china-gulf-forum-nyuad@nyu.edu" title="Email"><img src="media/icons/mail.png" alt="Email"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 China-Gulf Forum. A student-led initiative fostering China-Gulf dialogue since 2019.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
 </html>
