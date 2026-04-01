@@ -1912,3 +1912,34 @@ body {
 body.page-exit {
   opacity: 0;
 }
+
+/* ========================================
+   TEAM YEAR TABS
+   ======================================== */
+.team-year-tabs {
+    padding: 1.5rem 0 0.5rem;
+    background: var(--cream-light);
+}
+.team-year-tabs .nav-pills {
+    gap: 0.75rem;
+}
+.team-year-tabs .nav-link {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--navy);
+    background: transparent;
+    border: 1.5px solid var(--navy);
+    border-radius: 2rem;
+    padding: 0.5rem 1.8rem;
+    transition: all 0.3s ease;
+    letter-spacing: 0.03em;
+}
+.team-year-tabs .nav-link:hover {
+    background: rgba(0, 51, 102, 0.08);
+}
+.team-year-tabs .nav-link.active {
+    background: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+}
